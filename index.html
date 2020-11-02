@@ -1,0 +1,114 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pixel - Cadastro de Jogos Clássicos</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <section>
+        <dialog class="nes-dialog is-dark" id="modal">
+            <form method="dialog">
+                <p class="title">Novo Jogo</p>
+                <p class="message-show"></p>
+                <menu class="dialog-menu">
+                    <button class="nes-btn is-primary">Ok</button>
+                </menu>
+            </form>
+        </dialog>
+    </section>
+
+    <div class="container">
+        <h2>Novo Jogo</h2>
+
+        <form action="">
+            <div class="nes-field">
+                <label for="">Nome</label>
+                <input class="nes-input" type="text" name="game" id="gameId" />
+            </div>
+
+            <div class="nes-select">
+                <label for="">Console</label>
+                <select name="console">
+                    <option value="" disabled selected>Selecione</option>
+                    <option value="Atari">Atari</option>
+                    <option value="Nintendo">Nintendo</option>
+                    <option value="Master System">Master System</option>
+                    <option value="Mega Drive">Mega Drive</option>
+                    <option value="Super Nintendo">Super Nintendo</option>
+                    <option value="Neo Geo">Neo Geo</option>
+                </select>
+            </div>
+
+            <div class="nes-field">
+                <label for="year">Ano de lançamento</label>
+                <input type="text" name="year" class="nes-input">
+            </div>
+
+
+
+
+            <div class="nes-field">
+                <label for="player">Quantidade de jogadores</label>
+
+                <label>
+                    <input type="radio" class="nes-radio" name="answer" id="player1"/>
+                    <span>1</span>
+                </label>
+
+                <label>
+                    <input type="radio" class="nes-radio" name="answer" id="player2"/>
+                    <span>2</span>
+                </label>
+
+            </div>
+
+
+            <div class="nes-field">
+                <label for="testcheck">Teste checkbox</label>
+
+                <label>
+                    <input type="checkbox" class="nes-checkbox"/>
+                    <span>Check 1</span>
+                </label>
+
+                <label>
+                    <input type="checkbox" class="nes-checkbox"/>
+                    <span>Check 2</span>
+                </label>
+
+                <label>
+                    <input type="checkbox" class="nes-checkbox"/>
+                    <span>Check 3</span>
+                </label>
+
+                <label>
+                    <input type="checkbox" class="nes-checkbox"/>
+                    <span>Check 4</span>
+                </label>
+
+            </div>
+
+
+            <button id="cadastrar-id" type="submit" class="nes-btn is-success btn-cadastrar">
+                Cadatrar
+            </button>
+
+
+
+        </form>
+    </div>
+
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
